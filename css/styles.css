@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+}
+.contenedor{
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 200px 1fr;
+    grid-template-areas:
+    "nav nav"
+    "main main"
+    "footer footer"
+    ;
+    height: 100vh;
+}
+.main{
+    grid-area: main;
+    background-color: blueviolet;
+    text-align: center;
+    padding: 1.5rem;
+}
+.footer{
+    grid-area: footer;
+    background-color: darkolivegreen;
+    text-align: center;
+    padding: 1.5rem;
+}
+.nav{
+    display: flex;
+    gap: 16px;
+    background-color: rgba(0, 0, 255, 0.179);
+    align-items: center;
+    padding: 1.5rem;
+}
+.boton-nav{
+    padding: 32px 64px;
+    border-radius: 16px;
+    white-space: nowrap;
+}
+.nav img{
+    border: 0;
+    padding: 0;
+    width: 180px;
+    height: 180px;
+}
