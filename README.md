@@ -1,0 +1,3 @@
+Este proyecto esta dirigido a todos los gimnasios "pequeños/medianos" de nuesta ciudad y otras ciudades que no cuentan con una pagina y por lo cual que ese gimnasio se de a conocer es muy dificil, imaginense a una persona que viene de visita a nuestra ciudad y quiere entrar a un gimnasio durante su estadia, como no conoce la ciudad lo primero que hara sera buscar en un navegador gimnasios que existen en la ciudad.
+El proposito del siguiente proyecto es aumentar la visibilidad de todos los gimnasios que existe en nuestra ciudad.
+Este proyecto soluciona la falta de informacion que existen sobre los gimnacios de nuestra ciudad u otras ciudades.
