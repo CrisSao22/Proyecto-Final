@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+.contenedor{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 310px auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "header nav nav"
+    "main main main"
+    "footer footer footer"
+    ;
+    min-height: 100vh;
+}
+.header{
+    grid-area: header;
+    background-color: white;
+}
+.header img{
+    border: 0;
+    padding: 0;
+    display: block;
+    width: 232.5px;
+    height: 178px;
+    margin-left: 77px;
+    margin-top: 17.5px;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: white;
+}
+.nav{
+    grid-area: nav;
+    display: flex;
+    background-color: white;
+    gap: 8px;
+}
+.boton-nav{
+    border: 0;
+    padding: 0;
+}
+.nav a{
+    display: block;
+    font-size: 25px;
+    padding: 0;
+    border: 0;
+    margin-top: 91px;
+    margin-left: 50px;
+    margin-right: -14.5px;   
+}
+.tarjetas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px;
+    padding: 32px;
+}
+.tarjeta{
+    display: flex;
+    background-color: black;
+    border: 0;
+    margin-left: 45px;
+    margin-top: 6px;
+    width: 453px;
+    height: 914px;
+    flex-direction: column;
+    align-items: center;
+    color: azure;
+}
+.tarjeta img{
+    display: block;
+    border: 0;
+    padding: 0;
+    width: 285px;
+    height: 285px;
+    margin-top: 140px;
+}
+.tarjeta h2{
+    display: block;
+    border: 0;
+    padding: 0;
+    margin-top: 112px;
+}
+.main{
+    grid-area: main;
+    background-color: white;
+}
+.footer nav{
+    display: flex;
+    gap: 608px;
+}
+.footer nav a{
+    display: block;
+    border: 0;
+    padding: 0;
+    font-size: 25px;
+    margin-left: 75px;
+    margin-top: 70px;
+    margin-right: 1px;
+}

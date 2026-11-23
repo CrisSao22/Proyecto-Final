@@ -27,7 +27,6 @@ body{
     height: 178px;
     margin-left: 77px;
     margin-top: 17.5px;
-
 }
 .main{
     grid-area: main;
@@ -36,19 +35,17 @@ body{
 .footer{
     grid-area: footer;
     background-color: white;
-    padding: 1.5rem;
 }
 .nav{
     grid-area: nav;
     display: flex;
     background-color: white;
+    gap: 8px;
 }
 .boton-nav{
     border: 0;
     padding: 0;
-    white-space: nowrap;
 }
-
 .nav a{
     display: block;
     font-size: 25px;
@@ -56,8 +53,7 @@ body{
     border: 0;
     margin-top: 91px;
     margin-left: 50px;
-    margin-right: -14.5px;
-    
+    margin-right: -14.5px;   
 }
 .main h1{
     font-family: "Inter", sans-serif;
@@ -67,7 +63,6 @@ body{
     margin-left: 75px;
     margin-top: 16px;
     font-kerning: none;
-
 }
 .main img{
     display: block;
@@ -84,8 +79,9 @@ body{
     padding: 0;
     font-size: 60px;
     font-weight: 820;
-    margin-top: -4px;
-    margin-left: 74px;
+    font-family: "Inter", sans-serif;
+    margin-top: 0px;
+    margin-left: 77px;
     margin-right: 550px;
     line-height: 1.17;
 }
@@ -94,23 +90,24 @@ body{
     border: 0;
     padding: 0;
     font-size: 25px;
+    font-family: "Inter", sans-serif;
     margin-left: 76px;
-    margin-top: -30px;
+    margin-top: -32px;
     margin-right: 59px;
     line-height: 1.17;
 }
 .footer nav{
     display: flex;
-    gap: 665px;
-    
+    gap: 608px;
 }
 .footer nav a{
     display: block;
     border: 0;
     padding: 0;
     font-size: 25px;
-    margin-left: 52px;
-    margin-top: -20px;
+    margin-left: 75px;
+    margin-top: 54px;
     margin-right: 1px;
 }
+
 
