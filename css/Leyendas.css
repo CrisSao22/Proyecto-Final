@@ -55,46 +55,33 @@ body{
     margin-left: 50px;
     margin-right: -14.5px;   
 }
-.main h1{
-    font-family: "Inter", sans-serif;
-    font-size: 118px;
-    border: 0;
-    padding: 0;
-    margin-left: 75px;
-    margin-top: 16px;
-    font-kerning: none;
+.leyendas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
 }
-.main img{
+.leyenda{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.leyenda img{
     display: block;
     border: 0;
     padding: 0;
-    width: 1241px;
-    height: 543px;
-    margin-top: -81px;
-    margin-left: 77px;
+    width: 356px;
+    height: 534px;
+    margin-left: 62px;
+    margin-top: 19px;
 }
-.main h2{
-    display: block;
+.leyenda p{
     border: 0;
     padding: 0;
-    font-size: 60px;
-    font-weight: 820;
+    line-height: 1.36;
+    font-size: 24px;
     font-family: "Inter", sans-serif;
-    margin-top: 0px;
-    margin-left: 77px;
-    margin-right: 550px;
-    line-height: 1.17;
-}
-.main p{
-    display: block;
-    border: 0;
-    padding: 0;
-    font-size: 25px;
-    font-family: "Inter", sans-serif;
-    margin-left: 76px;
-    margin-top: -32px;
-    margin-right: 59px;
-    line-height: 1.17;
+    margin-left: 65px;
+    margin-top: -3px;
 }
 .footer nav{
     display: flex;
@@ -106,6 +93,6 @@ body{
     padding: 0;
     font-size: 25px;
     margin-left: 75px;
-    margin-top: 54px;
+    margin-top: 174px;
     margin-right: 1px;
 }
