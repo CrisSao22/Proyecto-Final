@@ -96,3 +96,168 @@ body{
     margin-top: 174px;
     margin-right: 1px;
 }
+
+@media (max-width: 799px) {
+    .contenedor {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "header nav"
+        "main main"
+        "footer footer";
+    }
+
+    .header img {
+        width: 250px;
+        height: auto;
+        margin-left: 0px;
+        margin-top: 14px;
+        margin-bottom: 0px;
+        margin-right: 0px;
+        object-fit: contain;
+    }
+    .nav {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .nav a {
+        font-size: 14px;
+        margin: 0;
+        text-align: right;
+    }
+
+    .nav a.nav-abajo {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+    .main {
+        grid-area: main;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        width: 100%;
+        margin: 0;
+        padding: 20px 16px;
+        box-sizing: border-box;
+    }
+
+    .main img {
+        display: block;
+        width: 200px;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .main p{
+        display: none;
+    }
+
+    .footer nav {
+        gap: 16px;
+        justify-content: space-between;
+        padding: 0 16px 20px 16px;
+    }
+
+    .footer nav a {
+        font-size: 24px;
+        margin-left: -15px;
+        margin-top: 27px;
+        margin-right: 25px;
+    }
+}
+
+
+
+@media (max-width: 1279px) and (min-width: 800px) {
+    .contenedor {
+        grid-template-columns: auto 1fr;
+        grid-template-areas:
+            "header nav"
+            "main main"
+            "footer footer";
+    }
+
+    .header img {
+        width: 230px;
+        height: 232px;
+        margin-left: 77px;
+        margin-top: -16px;
+        object-fit: contain;
+    }
+
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .nav a {
+        font-family: "Inter", sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+    
+    .main {
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+        padding: 24px 36px 40px 36px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .main > div,
+    .main > section {
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+        width: 100%;
+    }
+
+    .main > div > div,
+    .main > section > div,
+    .tarjeta,
+    .leyenda {
+        display: grid;
+        grid-template-columns: 165px minmax(0, 1fr);
+        align-items: center;
+        column-gap: 28px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .main img {
+        display: block;
+        width: 165px;
+        height: 215px;
+        object-fit: cover;
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    .main p {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.35;
+        color: #0b132b;
+    }
+    .footer nav{
+        gap: 25px;
+    }
+    .footer nav a {
+        font-size: 25px;
+        margin-top: 250px;
+        margin-left: 75px;
+    }
+}

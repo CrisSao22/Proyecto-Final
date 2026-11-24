@@ -116,5 +116,201 @@ body {
     font-size: 25px;
     margin-left: 75px;
     margin-top: 652px;
-    margin-right: 1px;
+    margin-right: 25px;
+}
+
+@media (max-width: 799px) {
+    .contenedor {
+        grid-template-columns: auto 1fr;
+        grid-template-areas:
+        "header nav"
+        "main main"
+        "footer footer";
+    }
+
+    .header img {
+        width: 235px;
+        height: 185px;
+        margin-left: 13px;
+        margin-top: 0px;
+        margin-bottom: 25px;
+        margin-right: 0px;
+        object-fit: contain;
+    }
+    .nav {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 8px !important;
+    height: auto !important;
+    width: 100% !important;
+    max-width: 100%;
+    margin: 0 !important;
+    padding: 10px 12px !important;
+    box-sizing: border-box;
+  }
+
+  .nav a,
+  .nav .boton-nav {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100%;
+    margin: 0 !important;
+    padding: 4px 0 !important;
+    font-size: 14px !important;
+    line-height: 1.25 !important;
+    white-space: normal !important;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+  }
+
+  .clase-del-texto-gris {
+    display: none !important;
+  }
+    .main {
+        grid-column: 1 / -1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 24px 16px;
+        box-sizing: border-box;
+    }
+
+    .main .planes {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .main .planes .plan {
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        width: 220px;
+        height: 220px;
+        box-sizing: border-box;
+    }
+
+    .main .planes .plan img {
+        display: block;
+        width: 290px;
+        height: 290px;
+        object-fit: contain;
+        margin-top: 45px;
+        margin-left: 235px;
+    }
+
+    .main .planes .plan .btn-nav {
+        display: none;
+    }
+
+    .footer nav {
+        gap: 16px;
+        justify-content: space-between;
+        
+    }
+
+    .footer nav a {
+        font-size: 16px;
+        margin-left: -15px;
+        margin-top: 215px;
+        margin-right: 180px;
+    }
+}
+
+
+
+@media (max-width: 1279px) and (min-width: 800px) {
+    .contenedor {
+        grid-template-columns: auto 1fr;
+        grid-template-areas:
+            "header nav"
+            "main main"
+            "footer footer";
+    }
+
+    .header img {
+        width: 230px;
+        height: 232px;
+        margin-left: 77px;
+        margin-top: -16px;
+        object-fit: contain;
+    }
+
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .nav a {
+        font-family: "Inter", sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+        margin-bottom: 25px;
+        margin-top: 30px;
+        margin-right: 25px;
+    }
+    .main .planes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  max-width: 720px;
+  box-sizing: border-box;
+}
+
+.main .planes .plan {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 24px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.main .planes .plan img {
+  width: 180px;
+  max-width: 45%;
+  height: auto;
+  display: block;
+  flex-shrink: 0;
+}
+
+.main .planes .plan .btn-nav {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  width: auto !important;
+  min-width: 0;
+  padding: 10px 14px;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #070707;
+  text-decoration: none;
+  white-space: normal;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+}
+    .footer nav {
+        gap: 16px;
+    }
+
+    .footer nav a {
+        font-size: 25px;
+        margin-top: 272px;
+        margin-left: 76px;
+        margin-right: 25px;
+    }
 }
